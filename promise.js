@@ -31,7 +31,6 @@ function createpost(post) {
 }
 
 function deletepost() {
-    debugger
     return new Promise((resolve, reject) => {
         setTimeout(() => {
             if (posts.length > 0) {
@@ -63,7 +62,6 @@ createpost({ title: 'post three', body: 'this is post three' })
             }).catch((err) => {console.log('2nd deletepost')})
         }).catch((err) => {console.log('1st deletepost')})
     }).catch((err) => {console.log('1st createPost')})
-    .catch(error);
 
 
 
